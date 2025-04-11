@@ -1,0 +1,64 @@
+--index.html 
+--header  line 26
+
+<div class="header-content">
+      <h1 class="text-light">WELCOME TO BLUBELL VANITY</h1>
+        <h1 class="lg-heading text-light">Elegant, Stylish, Functional</h1>
+        <p class="text-light">Transform your bathroom into a haven of style and functionality with our <br> premium vanity solutions. From floor-mount cabinets to wall mount designs, <BR>we bring sophistication and innovation to every corner of your space</BR></p>
+        <a href="#explore-places" class="btn btn-primary text-light">Learn More</a>
+        <a href="#explore-places" class="btn btn-primary text-light">Our Products</a>
+     </div>
+
+-- line 34
+<section class="showcase">
+      <div class="container">
+        <div >					
+                <h2 class="section2">The perfect blend of craftsmanship and innovation, bringing unparalleled beauty and utility to your bathroom space</h2>				</div>
+              </div>
+    </div>
+    </section>
+
+
+style .css 
+.header-content{
+    /* border: 2px solid white; */
+    /* text-align: center; */
+    position:absolute ;
+    top: 55%;
+    left:38%;
+    transform: translate(-50%,-50%);
+    /* background: linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0,0.2)); */
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    background-color:transparent;
+    border-radius: 100px;
+    border: 1px solid white;
+}
+.btn-primary:hover{
+    background: #ddd;
+    color: black;
+}
+
+.section2{
+    font-size: 5rem;
+    font-family: auto;
+    font-style: italic;
+    font-weight: bolder;
+}
+body{
+    /* font-family:'Inter', 'Segoe UI', Roboto, Helvetica, Arial,sans-serif; */
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+               Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+               /* font-family: 'Open Sans', Helvetica, Arial, sans-serif; */
+               /* font-family: 'Merriweather', 'Georgia', serif; */
+               font-family: 'Manrope', 'Poppins', 'Helvetica Neue', sans-serif;
+}
