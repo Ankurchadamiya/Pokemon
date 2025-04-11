@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a3dab98d99.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png"  href="./img/logo1.jpg">
+   <link rel="stylesheet" href="./css/style.css">
+    <title>Panacea Nexgen Global LLP</title>
+    <style>
+       body {
+  font-family: 'Inter', sans-serif;
+  background: #d6ccc2;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Left-side filter box */
+.filter-box {
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #888;
+  background-color: #f9f6f1;
+}
+
+.filter-box h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.filter-box button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.filter-box button:hover {
+  background-color: #eaeaea;
+}
+
+/* Right-side grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  flex: 1;
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+
+/* footer  */
+
+.site-footer {
+  background-color: #f6ece3;
+  padding: 60px 40px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.brand .logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  margin-left: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+      </style>
+</head>
+<body>
+    <header class="product-header">
+        <nav class="nav">
+           <div class="container">
+             <img src="./img/logo.jpg" class="logo lg-heading" style="width: 12%; height: 36%;">
+           <!-- <h1 class="logo lg-heading">WT</h1> -->
+         <ul class="nav-items">
+           <li class="nav-item"><a href="index.html">Home</a></li>
+           <li class="nav-item"><a href="about.html">About</a></li>
+           <li class="nav-item"><a href="about.html">Products</a></li>
+           <li class="nav-item"><a href="contact.html">Contact</a></li>
+         </ul>
+       </div>
+        </nav>
+        <div class="header-content">
+          
+           <h1 class="lg-heading text-light">Products</h1>
+           <!-- <p class="text-light">Transform your bathroom into a haven of style and functionality with our <br> premium vanity solutions. From floor-mount cabinets to wall mount designs, <BR>we bring sophistication and innovation to every corner of your space</BR></p> -->
+           <!-- <h1 class="text-light">Home</h1>
+           <h1 class="text-light">Products</h1> -->
+           <!-- <a href="#explore-places" class="btn btn-primary text-light">Learn More</a>
+           <a href="#explore-places" class="btn btn-primary text-light">Our Products</a> -->
+        </div>
+       </header>
+
+       <section>
+        <div class="container">
+        <div class="filter-box">
+            <h3>Filter Product By</h3>
+            <button onclick="filterProducts('all')" class="active">All Products</button>
+            <button onclick="filterProducts('floor')">Floor Mount Cabinet</button>
+            <button onclick="filterProducts('wall')">Wall Mount Cabinet</button>
+          </div>
+        
+          <div class="grid" id="productGrid">
+            <div class="card" data-type="wall">
+              <img src="https://via.placeholder.com/200x200/ADD8E6?text=LUXE" />
+              <div class="label">LUXE</div>
+            </div>
+            <div class="card" data-type="floor">
+              <img src="https://via.placeholder.com/200x200/F5F5DC?text=OPAL" />
+              <div class="label">OPAL</div>
+            </div>
+            <div class="card" data-type="floor">
+              <img src="https://via.placeholder.com/200x200/90EE90?text=EDEN" />
+              <div class="label">EDEN</div>
+            </div>
+            <div class="card" data-type="wall">
+              <img src="https://via.placeholder.com/200x200/FF0000?text=ROYAL" />
+              <div class="label">ROYAL</div>
+            </div>
+            <div class="card" data-type="wall">
+              <img src="https://via.placeholder.com/200x200/9370DB?text=REGAL" />
+              <div class="label">REGAL</div>
+            </div>
+            <div class="card" data-type="wall">
+              <img src="https://via.placeholder.com/200x200/C0C0C0?text=AQUA" />
+              <div class="label">AQUA</div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-column brand">
+            <img src="logo.png" alt="Belz Vanity Logo" class="logo" />
+            <p>Crafted to elevate every space with timeless design and unmatched quality</p>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Contact Us</h4>
+            <p><strong>Address</strong><br>
+            Survey No. 197P, Plot No. 25,<br>
+            Dharmganga Estate, Old Ghuntu Road,<br>
+            Mahendranagar, Morbi-363642 Guj. INDIA.</p>
+      
+            <p><strong>Phone</strong><br>+91 63592 53632</p>
+      
+            <p><strong>Email</strong><br>belzvanity@gmail.com</p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>Copyright © 2025 Belz Vanity</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Services</a>
+          </div>
+        </div>
+      </footer>
+      
+
+       <script>
+        function filterProducts(type) {
+          const buttons = document.querySelectorAll('.filter-box button');
+          buttons.forEach(btn => btn.classList.remove('active'));
+          event.target.classList.add('active');
+    
+          const cards = document.querySelectorAll('.card');
+          cards.forEach(card => {
+            if (type === 'all' || card.dataset.type === type) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        }
+      </script>
+</body>
+</html>
