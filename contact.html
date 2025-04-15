@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a3dab98d99.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png"  href="./img/logo1.jpg">
+   <link rel="stylesheet" href="./css/style.css">
+    <title>Panacea Nexgen Global LLP</title>
+</head>
+<style>
+    .contact-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* To contain floated elements or rounded corners */
+}
+    .contact-container {
+    display: flex;
+    padding: 40px;
+}
+
+.contact-left {
+    flex: 0 0 50%;
+    padding-right: 30px;
+}
+
+.contact-title-prefix {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.contact-title {
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Ensure padding and border are inside the element's width */
+}
+
+.contact-form textarea {
+    min-height: 100px;
+}
+
+.contact-form .submit-button {
+    background-color: #343a40; /* Dark background for button */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #555;
+}
+
+.contact-right {
+    flex: 0 0 50%;
+    padding-left: 30px;
+}
+
+.contact-info-text {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-details .detail-item {
+    margin-bottom: 25px;
+}
+
+.contact-details h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex: 0 0 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .contact-title {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-container {
+        padding: 30px;
+    }
+
+    .contact-left {
+        padding-right: 20px;
+    }
+
+    .contact-right {
+        padding-left: 20px;
+    }
+
+    .contact-title {
+        font-size: 2.2em;
+    }
+}
+
+
+/* ... other contact.css styles ... */
+
+.google-map {
+    margin-top: 30px;
+    width: 100%; /* Make the container width 100% of its parent */
+    overflow: hidden; /* Hide any potential overflow from the iframe */
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 100%; /* Make the iframe take up the full height of its container */
+    border: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex: 0 0 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .contact-title {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    /* Ensure map takes full width on smaller screens */
+    .google-map {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-container {
+        padding: 30px;
+    }
+
+    .contact-left {
+        padding-right: 20px;
+    }
+
+    .contact-right {
+        padding-left: 20px;
+    }
+
+    .contact-title {
+        font-size: 2.2em;
+    }
+
+    /* Adjust map margin if needed for medium screens */
+    .google-map {
+        margin-top: 25px;
+    }
+}
+</style>
+<body>
+    <nav class="nav bg-dark">
+        <div class="container">
+        <h1 class="logo lg-heading">Panacea Nexgen Global LLP</h1>
+      <ul class="nav-items">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    </nav>
+    <section class="contact-form">
+     
+     <div class="form-wrapper container">
+        <div class="componey-address">
+            <div class="address">
+             <i class="fas fa-map fa-3x text-red"></i>           
+             <h2 class="text-gray md-heading">Location</h2>
+             <p>#2661 Janakpuri colony,city name,town name.</p>
+            </div>
+            <div class="address">
+             <i class="far fa-envelope fa-3x text-red"></i>
+             <h2 class="text-gray md-heading">E-mail</h2>
+             <p>panaceanexgengloballlp@gmail.com</p>
+            </div>
+            <div class="address">
+             <i class=" fas fa-phone-square-alt fa-3x text-red"></i>
+             <h2 class="text-gray md-heading">Call</h2>
+             <p>+91 83207 90045</p>
+            </div>
+            <img src="./img/company-img.jpg" alt="componey image">
+        </div>
+        <!-- <form action="" class="form">
+        <h1 class="lg-heading text-black c1">Contact Us</h1>
+        <p class="text-gray">Let us know your qoestions,suggestion, suggestion and concern by filling out the contact form below</p>
+        <div class="form-group">
+            <label for="username">username</label>
+            <input type="text" name="" id="username"required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="" id="email"required>
+        </div>
+        <div class="form-group"><label for="Phone">Phone</label>
+            <input type="text" name="" id="Phone"required></div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea  name="" id="message" ></textarea>
+        </div>
+        <button type="submit" class="form-btn">Submit</button>
+        </form> -->
+     </div>
+    </section>
+
+
+    <div class="contact-container">
+        <div class="contact-left">
+            <p class="contact-title-prefix">CONTACT BELEZ VANITY</p>
+            <h1 class="contact-title">Get In Touch</h1>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 1234567890">
+                </div>
+                <div class="form-group message-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="You Can Write Your Message Here"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send</button>
+            </form>
+        </div>
+        <div class="contact-right">
+            <p class="contact-info-text">Have a question or need assistance? Reach out to us using the contact details below or by filling out the form. We're here to help and will respond promptly.</p>
+            <div class="contact-details">
+                <div class="detail-item">
+                    <h3>Address</h3>
+                    <p>Survey No. 177/P, Plot No. 25, Dholarpar Estate, Old Ghuntu Road,</p>
+                    <p>Morbi-363642, Gujarat, INDIA.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Phone</h3>
+                    <p>+91 63592 55632</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Email</h3>
+                    <p>belezvanity@gmail.com</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+   
+    <div class="google-map contact-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69804.04935519754!2d70.81559562963584!3d22.80505188039142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598cd96ce15487%3A0x294863999340c94e!2sMorbi%2C%20Gujarat!5e1!3m2!1sen!2sin!4v1744698414786!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer class="footer">
+        <div class="social-media-links">
+         <i class="fa-brands fa-facebook fa-4x"></i>
+         <i class="fa-brands fa-instagram fa-4x"></i>
+         <i class="fa-brands fa-twitter fa-4x"></i>
+        </div>
+        <p>Panacea Nexgen Global LLP &copy;2020,all rights reserved</p>
+       </footer>
+</body>
+<script>
+//     document.addEventListener('DOMContentLoaded', function() {
+//     const contactForm = document.querySelector('.contact-form');
+
+//     if (contactForm) {
+//         contactForm.addEventListener('submit', function(event) {
+//             event.preventDefault(); // Prevent the default form submission
+//             // You can add your JavaScript code here to handle the form data,
+//             // like sending it to a server using AJAX.
+//             alert('Form submitted (for demonstration purposes only)!');
+//         });
+//     }
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('.contact-form');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            const recipientEmail = 'ankurchadamiya4008@gmail.com'; // Your contact email address
+            const subject = 'New Contact Form Submission';
+            const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage:\n${message}`;
+
+            const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            window.location.href = mailtoLink; // Open the user's email client
+        });
+    }
+});
+</script>
+</html>
